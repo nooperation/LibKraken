@@ -18,10 +18,12 @@ std::vector<std::pair<filesystem::path, filesystem::path>> GetTests(const filesy
   {
     const auto& test_file_path = test_file.path();
 
-    if (test_file_path.extension() == ".test") {
+    if (test_file_path.extension() == ".test")
+    {
       auto solution_path = test_file_path.parent_path() / test_file_path.stem().u8string().append(".expected");
 
-      if (filesystem::exists(solution_path)) {
+      if (filesystem::exists(solution_path))
+      {
         test_files.emplace_back(std::make_pair(
           test_file_path,
           solution_path
@@ -64,20 +66,25 @@ bool RunTest(const filesystem::path& test_path, const filesystem::path& expected
 
   const auto is_successful = Kraken_DecompressInMemory(test_bytes.get(), test_file_size, actual_bytes.get(), &actual_bytes_size);
 
-  if (is_successful) {
-    if (actual_bytes_size != expected_file_size) {
+  if (is_successful)
+  {
+    if (actual_bytes_size != expected_file_size)
+    {
       std::cout << "Failure: Expected " << expected_file_size << " bytes, but got " << actual_bytes_size << std::endl;
       return false;
     }
 
-    for (uintmax_t i = 0; i < actual_bytes_size; ++i) {
-      if (actual_bytes[i] != expected_bytes[i]) {
+    for (uintmax_t i = 0; i < actual_bytes_size; ++i)
+    {
+      if (actual_bytes[i] != expected_bytes[i])
+      {
         printf("Failure on byte %llu: Expected %02X Got %02X\n", i, expected_bytes[i], actual_bytes[i]);
         return false;
       }
     }
   }
-  else {
+  else
+  {
     std::cout << "Failure" << std::endl;
     return false;
   }
@@ -91,19 +98,23 @@ int main()
   auto success = true;
 
   auto test_files = GetTests("TestData");
-  for (const auto& test : test_files) {
+  for (const auto& test : test_files)
+  {
     std::cout << test.first.stem() << " - ";
 
-    if (!RunTest(test.first, test.second)) {
+    if (!RunTest(test.first, test.second))
+    {
       std::cout << "*** Failed ***" << std::endl;
       success = false;
     }
-    else {
+    else
+    {
       std::cout << "Passed" << std::endl;
     }
   }
 
-  if (!success) {
+  if (!success)
+  {
     std::cout << "Failed to pass tests" << std::endl;
   }
 

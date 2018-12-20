@@ -25,7 +25,8 @@ bool Kraken_DecompressInMemory(
   _Inout_ std::size_t *inDecompressedSize)
 {
   const auto num_bytes_written = Kraken_Decompress(inCompressedBytes, inCompressedSize, outDecompressedBytes, *inDecompressedSize);
-  if (num_bytes_written < 0) {
+  if (num_bytes_written < 0)
+  {
     SetError("Failed to decompress bytes");
     return false;
   }
