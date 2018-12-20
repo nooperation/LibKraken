@@ -9,12 +9,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kraken", "ThirdParty\Kraken
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Console|x64 = Console|x64
+		Console|x86 = Console|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Console|x64.ActiveCfg = Console|x64
+		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Console|x64.Build.0 = Console|x64
+		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Console|x86.ActiveCfg = Console|Win32
+		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Console|x86.Build.0 = Console|Win32
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Debug|x64.ActiveCfg = Debug|x64
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Debug|x64.Build.0 = Debug|x64
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Debug|x86.ActiveCfg = Debug|Win32
@@ -23,6 +29,10 @@ Global
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Release|x64.Build.0 = Release|x64
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Release|x86.ActiveCfg = Release|Win32
 		{62BBE84C-7843-4E16-AD7B-50E3A6A50103}.Release|x86.Build.0 = Release|Win32
+		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Console|x64.ActiveCfg = Console|x64
+		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Console|x64.Build.0 = Console|x64
+		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Console|x86.ActiveCfg = Console|Win32
+		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Console|x86.Build.0 = Console|Win32
 		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Debug|x64.ActiveCfg = Debug|x64
 		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Debug|x64.Build.0 = Debug|x64
 		{777E5434-474E-4BE8-BD19-8AF13CE3FDEA}.Debug|x86.ActiveCfg = Debug|Win32
