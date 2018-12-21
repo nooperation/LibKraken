@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SanTools.LibKraken</id>
+    <version>$version$</version>
+    <authors>NoOperation</authors>
+    <owners>NoOperation</owners>
+    <licenseUrl>https://github.com/nooperation/LibKraken/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/nooperation/LibKraken/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>in-memory Kraken decompression library</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>Kraken SanTools native</tags>
+  </metadata>
+  <files>
+    <file src="build\**" target="build" />
+    <file src="x64\Release\LibKraken.dll" target="contentFiles\x64\LibKraken.dll" />
+  </files>
+</package>
