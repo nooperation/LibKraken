@@ -5,7 +5,6 @@
     <version>$version$</version>
     <authors>NoOperation</authors>
     <owners>NoOperation</owners>
-    <licenseUrl>https://github.com/nooperation/LibKraken/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/nooperation/LibKraken/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>in-memory Kraken decompression library</description>
